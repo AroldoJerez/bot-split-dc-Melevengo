@@ -1,0 +1,16 @@
+{
+  "name": "albion-bot-contable",
+  "version": "1.0.0",
+  "description": "Sistema de splits y balances para Albion Online",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.1",
+    "sqlite3": "^5.1.7",
+    "sqlite": "^5.1.1",
+    "xlsx": "^0.18.5"
+  }
+}
