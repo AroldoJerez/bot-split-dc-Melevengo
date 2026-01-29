@@ -21,6 +21,14 @@ const client = new Client({
 let db;
 let activeSplits = new Map();
 
+const http = require('http');
+
+// Crear un servidor web básico para que Render no apague el bot
+http.createServer((req, res) => {
+    res.write('Bot de Albion Online esta funcionando!');
+    res.end();
+}).listen(process.env.PORT || 3000);
+
 // 1. INICIALIZACIÓN DE BASE DE DATOS
 (async () => {
    db = await open({ filename: './data/database.sqlite', driver: sqlite3.Database });
